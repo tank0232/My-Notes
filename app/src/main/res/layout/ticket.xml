@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:dividerHeight="0dp"
+              android:background="@color/gray"
+              android:layout_height="wrap_content" android:divider="@android:color/transparent">
+
+    <LinearLayout
+            android:background="@drawable/background_layout"
+            android:layout_margin="10pt"
+            android:orientation="vertical"
+            android:divider="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"/>
+        <TextView
+                android:paddingLeft="10pt"
+                android:text="There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvDes"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_marginRight="10pt"
+                    android:layout_width="40pt"
+                    android:layout_height="20pt" app:srcCompat="@drawable/ic_delete" android:id="@+id/ivDelete"
+                    android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="40pt"
+                    android:layout_height="20pt"
+                    app:srcCompat="@drawable/ic_edit" android:id="@+id/ivEdit"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
